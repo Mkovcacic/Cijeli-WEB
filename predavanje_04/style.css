@@ -1,0 +1,12 @@
+.tiny-square {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}

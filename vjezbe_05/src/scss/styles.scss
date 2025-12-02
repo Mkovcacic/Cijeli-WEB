@@ -1,0 +1,103 @@
+$primary: #26a69a;
+$light: #f8f9fa;
+$dark: #212529;
+$enable-rounded: false;
+
+@import "bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+body {
+  font-family: "Josefin Sans", sans-serif;    
+}
+
+.navbar {
+    background: rgba($color: $light, $alpha: 0.9);
+    box-shadow: 2px 2px 2px $primary;
+}
+
+#home-section {
+    height: 600px;
+    background: url("../img/mountains.jpg");
+    background-attachment: fixed;
+
+    scroll-padding: 66px;
+
+    .curtain {
+    
+        padding-top: 66px;
+        background: rgba($color: $primary, $alpha: 0.8);
+    }
+
+    h1 {
+        font-weight: 700;
+    }
+
+    img {
+        opacity: 0.8;
+    }
+
+}
+
+#cards-section, footer {
+    background-image: url("../img/lines_inv.jpg");
+}
+
+#authors-section {
+    background-image: url("../img/lines.jpg");
+
+    .card {
+        margin-top: 56px;
+    }
+    .avatar {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-top: -56px;
+    }
+
+    .row > .col-12:nth-child(1)  .avatar {
+        background-image: url("../img/person_1.jpg");
+        background-size: cover;
+    }
+
+    .row > .col-12:nth-child(2)  .avatar {
+        background-image: url("../img/person_2.jpg");
+        background-size: cover;
+    }
+    
+    .row > .col-12:nth-child(3)  .avatar {
+        background-image: url("../img/person_3.jpg");
+        background-size: cover;
+    }
+    
+    .row > .col-12:nth-child(4)  .avatar {
+        background-image: url("../img/person_4.jpg");
+        background-size: cover;
+    }    
+
+}
+
+#cards-section, #authors-section {
+    
+    background-attachment: fixed;
+    background-position: center;
+
+    .curtain {
+        background: rgba($color: $light, $alpha: 0.8);
+    }
+}
+
+footer {
+    .curtain {
+        background: rgba($color: $dark, $alpha: 0.8);        
+    }
+}
+
+.anchor {
+    visibility: hidden;
+    position: relative;
+    top: -66px;
+}
